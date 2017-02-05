@@ -131,5 +131,7 @@ for (i in 2:(ncol(finaloutput)-2))
 
 names(aggregatedoutput)[3:ncol(aggregatedoutput)] <- names(X)[1:ncol(X)-1]
 
-write.csv(aggregatedoutput,"mean_per_activity_subject.csv")
+write.table(aggregatedoutput,"mean_per_activity_subject.csv", row.names=FALSE)
+
+
 
